@@ -59,9 +59,12 @@ where CountryCode = 'JPN'
 order by Population desc
 limit 5;
 -- q12
+update country
+set HeadOfState = 'Elizabeth II'
+where HeadOfState = 'Elisabeth II';
 select name, Code
 from country
-where HeadOfState = 'Elisabeth II';
+where HeadOfState = 'Elizabeth II';
 -- q13
 select name, Population / SurfaceArea
 from country 
